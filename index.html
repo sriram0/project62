@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Starshow</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+
+        #mc {
+            background-color: yellow;
+            padding-top: 50px;
+        }
+
+        #menu {
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            height: 23px;
+            z-index: 1;
+        }
+
+        #menu a {
+            margin-left: 20%;
+            text-decoration: none;
+            color: black;
+        }
+
+        #menu a:hover {
+            text-decoration: underline;
+            font-size: 1.1em;
+        }
+
+        #mc img {
+            height: 350px;
+        }
+
+        
+
+        .grid img
+            {
+            border: 5px ridge yellow;
+            margin: 2px;
+            width: 250px;
+            height: 200px;
+           }
+        
+        #ss{
+            width:900px;
+            height:500px;
+            border: 5px ridge yellow;
+            margin: 2px;
+        }
+        
+        /*Style the menu according to your convenience*/
+        
+          #menu a {
+            position: relative;
+            top: 30px;
+            z-index: 0;
+            text-align: center;
+           
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="container">
+
+        <span id="menu">
+            <a>Home</a>
+            <a>Grid View</a>
+            <a>Slide View</a>
+        </span>
+        <center>
+            <!-- GIF CODE-->
+            <br><br>
+            <h1>Starshow</h1>
+            <center>
+                <img id="ss" src="galaxy.gif" width="400" height="900">
+            </center>
+
+            <!-- GRID CODE-->
+            <h2>Grid View</h2>
+            <div class="grid">
+                <img src="img1.jpeg"><img src="img2.jpeg"><img src="img3.jpeg"><br>
+                <img src="img4.jpeg"><img src="img5.jpeg"><img src="img6.jpeg">
+            </div>
+
+            <!-- SLIDE CODE-->
+            <h2>Slide View</h2>
+
+            <div class="carousel slide" id="mc">
+                
+                <div class="carousel-inner">
+                    
+                    <div class="item active">
+                        <center>
+                            <img src="img1.jpeg" width="500" height="300">
+
+                            <div>
+                                <br><br>
+                                <p class="carousel-content"> Diagonal Galaxy</p>
+                            </div>
+                        </center>
+                    </div>
+
+                    <div class="item ">
+                        <center>
+                            <img src="img2.jpeg" width="500" height="300">
+                            <div>
+                                <br><br>
+                                <p class="carousel-content"> Hubble space telescope galaxies</p>
+                            </div>
+                        </center>
+                    </div>
+                    
+                    <!-- Name the image 3 below-->
+                    
+                    <div class="item ">
+                        <center>
+                            <img src="img3.jpeg" width="500" height="300">
+                            <div>
+                                <br><br>
+                                <p class="carousel-content">Giant Nebula</p>
+                            </div>
+                        </center>
+                    </div>
+                    
+                    <!-- Start writing the code for image 4 onwards-->
+                    <div class="item ">
+                        <center>
+                            <img src="img4.jpeg" width="500" height="300">
+                            <div>
+                                <br><br>
+                                <p class="carousel-content">Solar System</p>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="item ">
+                        <center>
+                            <img src="img5.jpeg" width="500" height="300">
+                            <div>
+                                <br><br>
+                                <p class="carousel-content">Black hole with Quasar</p>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="item ">
+                        <center>
+                            <img src="img6.jpeg" width="500" height="300">
+                            <div>
+                                <br><br>
+                                <p class="carousel-content">Black hole with Quasar</p>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+
+                <!-- Code for icons-->
+                <a href="#mc" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+
+                <a href="#mc" class="right carousel-control" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
+            
+        </center>
+    </div>
+</body></html>
